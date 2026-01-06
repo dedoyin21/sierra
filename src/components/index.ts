@@ -1,0 +1,12 @@
+export { Navigation } from './Navigation';
+export { Hero } from './Hero';
+export { Features } from './Features';
+export { ScienceMeetsNature } from './ScienceMeetsNature';
+export { SkinDeepMission } from './SkinDeepMission';
+export { SkincareFavorites } from './SkincareFavorites';
+export { Testimonials } from './Testimonials';
+export { FAQ } from './FAQ';
+export { Newsletter } from './Newsletter';
+export { AdditionalFeatures } from './AdditionalFeatures';
+export { Footer } from './Footer';
+export { Button } from './Button';
