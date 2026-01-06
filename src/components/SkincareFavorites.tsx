@@ -2,7 +2,7 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import "swiper/css";
+import "swiper/swiper-bundle.css";
 import { LuArrowRightToLine } from "react-icons/lu";
 
 
