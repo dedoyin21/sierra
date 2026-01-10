@@ -90,9 +90,9 @@ export function SkincareFavorites() {
             slidesOffsetAfter={0}
             centeredSlides={true}
             breakpoints={{
-              768: { slidesPerView: 2.2 },
-              1024: { slidesPerView: 2.4 },
-              1280: { slidesPerView: 2.6 },
+              768: { slidesPerView: 2.5 },
+              1024: { slidesPerView: 3 },
+              1280: { slidesPerView: 3 },
             }}
           >
             {products.map((product) => (

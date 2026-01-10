@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 
 export function FAQ() {
   const [openId, setOpenId] = useState<number | null>(null);
@@ -33,11 +33,11 @@ export function FAQ() {
       id: 5,
       question: 'How long before I start seeing results?',
       answer:
-        'Most customers see visible improvements in skin texture and tone within 2-4 weeks of consistent use.',
+        'Most customers see visible improvements in skin texture and tone within 2–4 weeks of consistent use.',
     },
     {
       id: 6,
-      question: 'Can I use your products if I\'m already using a prescription treatment?',
+      question: "Can I use your products if I'm already using a prescription treatment?",
       answer:
         'We recommend consulting with your dermatologist before combining our products with prescription treatments.',
     },
@@ -56,56 +56,55 @@ export function FAQ() {
   ];
 
   return (
-    <section id="faqs" className="w-full bg-white px-4 md:py-12 py-20">
+    <section id="faqs" className="w-full bg-white px-4 py-20">
       <div className="mx-auto">
         {/* Header */}
-        <div className="text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20">
-          <h2 className="text-4xl sm:text-4xl md:text-5xl font-light text-[#926A63] mb-4">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-light text-[#926A63] mb-4">
             Frequently Asked Questions
           </h2>
-          <p className="text-center text-[#292929] text-[18px] sm:text-base md:text-sm mx-auto md:px-88 pt-4 pb-10 mb:pb-6">
+          <p className="text-[#292929] text-base md:text-lg pt-4 pb-6 text-center justify-center mx-auto md:px-80">
             From ingredients to packaging, every detail reflects our promise to protect both
             your skin and the planet.
           </p>
         </div>
 
-        {/* FAQ Accordion */}
+        {/* FAQ List */}
         <div className="md:px-14">
           {faqs.map((faq) => (
-            <div
-              key={faq.id}
-              className={`rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden transition-colors duration-300 
-              ${
-                openId === faq.id
-                  ? 'bg-[#FFEBF6]'
-                  : 'bg-[#F5F5F5]'
-              }
-              mb-3 sm:mb-4 md:mb-5 shadow-sm`}
-            >
-              <button
-                onClick={() => setOpenId(openId === faq.id ? null : faq.id)}
-                className="w-full px-4 sm:px-6 md:px-8 py-3 sm:py-4 md:py-6 flex items-center justify-between text-left"
+            <div key={faq.id} className="pb-6 bg-white">
+              {/* Card */}
+              <div
+                className={`rounded-2xl border transition-all duration-300
+                ${
+                  openId === faq.id
+                    ? 'bg-[#FFEBF6] border-[#E8B4D8]'
+                    : 'bg-[#F5F5F5] border-[#E6E6E6]'
+                }`}
               >
-                <h3 className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl font-semibold text-[#242424] pr-4">
-                  {faq.question}
-                </h3>
-                <span
-                  className={`text-xl sm:text-2xl md:text-3xl text-[#926A63] transition-transform duration-300 ${
-                    openId === faq.id ? 'rotate-180' : ''
-                  }`}
+                {/* Question */}
+                <button
+                  onClick={() => setOpenId(openId === faq.id ? null : faq.id)}
+                  className="w-full px-6 md:px-8 py-5 md:py-6 flex items-center justify-between text-left"
                 >
-                  {openId === faq.id ? <IoIosArrowUp /> : <IoIosArrowDown />}
-                </span>
-              </button>
+                  <h3 className="text-base sm:text-lg md:text-lg lg:text-xl font-semibold text-[#242424] pr-4">
+                    {faq.question}
+                  </h3>
 
-              {/* Answer */}
-              {openId === faq.id && (
-                <div className="px-4 sm:px-6 md:px-8 pb-3 sm:pb-4 md:pb-6 border-[#E8B4D8]">
-                  <p className="text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-2xl text-[#292929] leading-relaxed">
-                    {faq.answer}
-                  </p>
-                </div>
-              )}
+                  <span className="text-2xl md:text-3xl text-[#926A63] transition-transform duration-300">
+                    {openId === faq.id ? <IoIosArrowUp /> : <IoIosArrowDown />}
+                  </span>
+                </button>
+
+                {/* Answer */}
+                {openId === faq.id && (
+                  <div className="px-6 md:px-8 pb-6">
+                    <p className="text-sm sm:text-base md:text-sm text-[#292929] leading-relaxed">
+                      {faq.answer}
+                    </p>
+                  </div>
+                )}
+              </div>
             </div>
           ))}
         </div>
