@@ -33,13 +33,13 @@ export function ScienceMeetsNature() {
   ];
 
   return (
-    <section className="w-full bg-white px-4 py-12 md:py-20">
+    <section className="w-full bg-white px-4 py-16 md:py-32 font-Manrope">
         {/* Header */}
-        <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#926A63] mb-4">
-            Science Meets Nature
+        <div className="mx-auto xl:max-w-360 2xl:max-w-360">
+          <h2 className="font-medium text-center text-[#926A63] text-3xl sm:text-4xl md:text-4xl xl:text-5xl 2xl:text-6xl pb-4">
+             Science Meets Nature
           </h2>
-          <p className="text-center text-[#292929] text-[18px] sm:text-base md:text-sm mx-auto md:px-88 pt-4 pb-14">
+          <p className="text-center mx-auto xl:px-65 text-[#292929] text-base md:text-sm xl:text-lg 2xl:text-xl leading-relaxed pb-9">
             Every formula is crafted by dermatologists using ingredients that are both clean
             and clinically proven. No parabens, no harsh chemicals — just skin-loving actives
             that deliver real results.

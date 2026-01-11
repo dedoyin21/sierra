@@ -63,7 +63,7 @@ export function FAQ() {
           <h2 className="text-4xl md:text-5xl font-light text-[#926A63] mb-4">
             Frequently Asked Questions
           </h2>
-          <p className="text-[#292929] text-base md:text-lg pt-4 pb-6 text-center justify-center mx-auto md:px-80">
+          <p className="text-[#292929] text-base md:text-lg pt-4 pb-6 text-center justify-center mx-auto">
             From ingredients to packaging, every detail reflects our promise to protect both
             your skin and the planet.
           </p>

@@ -1,12 +1,12 @@
-import { FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 export function Footer() {
   const links = [
-    { name: 'How it works', href: '#features' },
-    { name: 'Our Mission', href: '#mission' },
-    { name: 'Favourites', href: '#favourites' },
-    { name: 'Testimonials', href: '#testimonials' },
-    { name: 'FAQ', href: '#faqs' },
+    { name: "How it works", href: "#features" },
+    { name: "Our Mission", href: "#mission" },
+    { name: "Favourites", href: "#favourites" },
+    { name: "Testimonials", href: "#testimonials" },
+    { name: "FAQ", href: "#faqs" },
   ];
 
   return (
@@ -23,13 +23,37 @@ export function Footer() {
       "
       style={{ backgroundImage: "url('/foot.jpg')" }}
     >
-      {/* Deep wine / fuchsia overlay */}
+      {/* Overlay */}
       <div className="absolute inset-0 bg-[#8B0F4E] opacity-80 z-0" />
 
       {/* Content */}
-      <div className="relative z-10 mx-auto px-8 md:px-16 pt-12 md:pt-10">
-        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8 text-white">
-          
+      <div
+        className="
+          relative
+          z-10
+          mx-auto
+          px-8
+          md:px-16
+          pt-12
+          md:pt-10
+          xl:max-w-350
+        "
+      >
+        <div
+          className="
+            flex
+            flex-col
+            gap-8
+            text-white
+
+            md:flex-row
+            md:items-start
+            md:justify-between
+
+            xl:items-start
+            xl:justify-between
+          "
+        >
           {/* Logo */}
           <img
             src="/logo.png"
@@ -38,7 +62,22 @@ export function Footer() {
           />
 
           {/* Links */}
-          <nav className="flex flex-col md:flex-row gap-6 md:gap-12 text-lg font-medium pt-9 md:pt-0">
+          <nav
+            className="
+              flex
+              flex-col
+              gap-6
+              text-lg
+              font-medium
+              pt-9
+
+              md:flex-row
+              md:gap-12
+              md:pt-0
+
+              xl:gap-12
+            "
+          >
             {links.map((link) => (
               <a key={link.name} href={link.href} className="hover:opacity-80">
                 {link.name}
@@ -47,7 +86,16 @@ export function Footer() {
           </nav>
 
           {/* Social Icons */}
-          <div className="flex gap-8 pt-8 md:pt-0">
+          <div
+            className="
+              flex
+              gap-8
+              pt-8
+
+              md:pt-0
+              xl:pt-0
+            "
+          >
             <FaInstagram className="w-7 h-7" />
             <FaLinkedin className="w-7 h-7" />
             <FaTwitter className="w-7 h-7" />
@@ -55,7 +103,7 @@ export function Footer() {
         </div>
       </div>
 
-      {/* BIG LOGO — FUCHSIA PINK, FULL WIDTH, NO GAP */}
+      {/* BIG LOGO — stays untouched, just capped on big screens */}
       <img
         src="/biglogo.png"
         alt="Sierra Watermark"
@@ -65,13 +113,12 @@ export function Footer() {
           left-1/2
           -translate-x-1/2
           w-full
-          max-w-none
           opacity-30
           pointer-events-none
+          xl:max-w-400
         "
         style={{
-          filter:
-            'brightness(1.4) saturate(2) hue-rotate(-10deg)',
+          filter: "brightness(1.4) saturate(2) hue-rotate(-10deg)",
         }}
       />
     </footer>
