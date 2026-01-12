@@ -35,11 +35,11 @@ export function ScienceMeetsNature() {
   return (
     <section className="w-full bg-white px-4 py-16 md:py-32 font-Manrope">
         {/* Header */}
-        <div className="mx-auto xl:max-w-360 2xl:max-w-360">
+        <div className="mx-auto">
           <h2 className="font-medium text-center text-[#926A63] text-3xl sm:text-4xl md:text-4xl xl:text-5xl 2xl:text-6xl pb-4">
              Science Meets Nature
           </h2>
-          <p className="text-center mx-auto xl:px-65 text-[#292929] text-base md:text-sm xl:text-lg 2xl:text-xl leading-relaxed pb-9">
+          <p className="text-center mx-auto xl:px-65 text-[#292929] text-base md:text-sm xl:text-lg  2xl:text-[30px] leading-relaxed pb-9">
             Every formula is crafted by dermatologists using ingredients that are both clean
             and clinically proven. No parabens, no harsh chemicals — just skin-loving actives
             that deliver real results.
@@ -52,7 +52,7 @@ export function ScienceMeetsNature() {
           <div className="md:col-span-1">
             <div
               key={benefits[0].id}
-              className="group relative overflow-hidden rounded-2xl h-114 md:h-90 cursor-pointer"
+              className="group relative overflow-hidden rounded-2xl h-114 md:h-90 2xl:h-134 cursor-pointer"
             >
               <img
                 src={benefits[0].image}
@@ -61,12 +61,12 @@ export function ScienceMeetsNature() {
               />
               <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent"></div>
               <div className="absolute inset-0 flex flex-col items-center text-center justify-center md:align-middle p-4 md:p-8">
-                <img src={benefits[0].icon} alt={`${benefits[0].title} icon`} className="h-45 md:h-25 w-auto md:pb-8 pb-16" />
+                <img src={benefits[0].icon} alt={`${benefits[0].title} icon`} className="h-45 md:h-25 w-auto 2xl:h-45 md:pb-8 pb-16" />
                 <div>
-                  <h3 className="text-[25px] md:text-xl font-medium text-white mb-2">
+                  <h3 className="text-[25px] md:text-xl font-medium text-white mb-2 2xl:text-5xl 2xl:pb-4">
                     {benefits[0].title}
                   </h3>
-                  <p className="text-xl md:text-[13px] text-gray-100 opacity-90 text-center md:px-4">
+                  <p className="text-xl md:text-[13px] text-gray-100 opacity-90 text-center md:px-4 2xl:text-2xl">
                     {benefits[0].description}
                   </p>
                 </div>
@@ -78,7 +78,7 @@ export function ScienceMeetsNature() {
           <div className="md:col-span-2">
             <div
               key={benefits[1].id}
-              className="group relative overflow-hidden rounded-2xl h-114 md:h-90 cursor-pointer"
+              className="group relative overflow-hidden rounded-2xl h-114 md:h-90 2xl:h-134 cursor-pointer"
             >
               <img
                 src={benefits[1].image}
@@ -87,12 +87,12 @@ export function ScienceMeetsNature() {
               />
               <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent"></div>
               <div className="absolute inset-0 flex flex-col p-4 md:p-6 justify-center align-middle">
-                <img src={benefits[1].icon} alt={`${benefits[1].title} icon`} className="h-45 md:h-25 w-auto self-center md:self-start pb-16 md:pb-8" />
+                <img src={benefits[1].icon} alt={`${benefits[1].title} icon`} className="h-45 md:h-25 w-auto 2xl:h-45 self-center md:self-start pb-16 md:pb-8" />
                 <div className="md:text-left text-center">
-                  <h3 className="text-[25px] md:text-xl font-semibold text-white mb-2">
+                  <h3 className="text-[25px] md:text-xl font-semibold text-white 2xl:text-5xl 2xl:pb-4 mb-2">
                     {benefits[1].title}
                   </h3>
-                  <p className="text-xl md:text-[13px] text-gray-100 opacity-90 text-center md:text-left md:pr-110 pr-0">
+                  <p className="text-xl md:text-[13px] text-gray-100 opacity-90 text-center md:text-left md:pr-110 pr-0 2xl:text-2xl">
                     {benefits[1].description}
                   </p>
                 </div>
@@ -104,7 +104,7 @@ export function ScienceMeetsNature() {
           <div className="md:col-span-2">
             <div
               key={benefits[2].id}
-              className="group relative overflow-hidden rounded-2xl h-114 md:h-90 cursor-pointer"
+              className="group relative overflow-hidden rounded-2xl h-114 md:h-90 2xl:h-134 cursor-pointer"
             >
               <img
                 src={benefits[2].image}
@@ -113,12 +113,12 @@ export function ScienceMeetsNature() {
               />
               <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent"></div>
               <div className="absolute inset-0 flex flex-col justify-center align-middle p-4 md:p-6">
-                <img src={benefits[2].icon} alt={`${benefits[2].title} icon`} className="h-45 md:h-25 w-auto self-center md:self-start pb-16 md:pb-8" />
+                <img src={benefits[2].icon} alt={`${benefits[2].title} icon`} className="h-45 md:h-25 w-auto 2xl:h-45 self-center md:self-start pb-16 md:pb-8" />
                 <div className="md:text-left text-center">
-                  <h3 className="text-[25px] md:text-xl font-semibold text-white mb-2">
+                  <h3 className="text-[25px] md:text-xl font-semibold text-white mb-2 2xl:text-5xl 2xl:pb-4">
                     {benefits[2].title}
                   </h3>
-                  <p className="text-xl md:text-[13px] text-gray-100 opacity-90 text-center md:text-left md:pr-110 pr-0">
+                  <p className="text-xl md:text-[13px] text-gray-100 opacity-90 text-center md:text-left md:pr-110 pr-0 2xl:text-2xl">
                     {benefits[2].description}
                   </p>
                 </div>
@@ -130,7 +130,7 @@ export function ScienceMeetsNature() {
           <div className="md:col-span-1">
             <div
               key={benefits[3].id}
-              className="group relative overflow-hidden rounded-2xl h-114 md:h-90 cursor-pointer"
+              className="group relative overflow-hidden rounded-2xl h-114 md:h-90 2xl:h-134 cursor-pointer"
             >
               <img
                 src={benefits[3].image}
@@ -139,12 +139,12 @@ export function ScienceMeetsNature() {
               />
               <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent"></div>
               <div className="absolute inset-0 flex flex-col items-center text-center justify-center align-middle p-4 md:p-6">
-                <img src={benefits[3].icon} alt={`${benefits[3].title} icon`} className="h-45 md:h-25 w-auto pb-16 md:pb-8" />
+                <img src={benefits[3].icon} alt={`${benefits[3].title} icon`} className="h-45 md:h-25 w-auto pb-16 md:pb-8 2xl:h-45" />
                 <div>
-                  <h3 className="text-[25px] md:text-xl font-semibold text-white mb-2">
+                  <h3 className="text-[25px] md:text-xl font-semibold text-white mb-2 2xl:text-5xl 2xl:pb-4">
                     {benefits[3].title}
                   </h3>
-                  <p className="text-xl md:text-[13px] text-gray-100 opacity-90 text-center md:px-4">
+                  <p className="text-xl md:text-[13px] text-gray-100 opacity-90 text-center md:px-4 2xl:text-2xl">
                     {benefits[3].description}
                   </p>
                 </div>

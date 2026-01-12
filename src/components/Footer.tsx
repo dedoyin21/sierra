@@ -20,6 +20,7 @@ export function Footer() {
         min-h-190
         md:min-h-95
         lg:min-h-102
+        2xl:min-h-162
       "
       style={{ backgroundImage: "url('/foot.jpg')" }}
     >
@@ -36,7 +37,6 @@ export function Footer() {
           md:px-16
           pt-12
           md:pt-10
-          xl:max-w-350
         "
       >
         <div
@@ -115,7 +115,6 @@ export function Footer() {
           w-full
           opacity-30
           pointer-events-none
-          xl:max-w-400
         "
         style={{
           filter: "brightness(1.4) saturate(2) hue-rotate(-10deg)",

@@ -21,10 +21,10 @@ export function SkincareFavorites() {
     <section id="favourites" className="w-full bg-white px-4 py-12 md:py-20">
       {/* HEADER */}
       <div className="text-center mb-12 md:mb-16">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-[#926A63] mb-4">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-[#926A63] mb-4">
           Our Skincare Favorites
         </h2>
-        <p className="text-[#292929] text-[16px] md:text-sm 2xl:text-[16px] mx-auto 2xl:px-80 pt-4 pb-6">
+        <p className="text-[#292929] text-[16px] md:text-sm 2xl:text-[30px] lg:text-[16px] mx-auto lg:px-80 pt-4 pb-6">
           Loved by thousands and recommended by experts — <br />
           explore our top-rated essentials.
         </p>
@@ -55,7 +55,7 @@ export function SkincareFavorites() {
       </div>
 
       {/* DESKTOP SLIDER */}
-      <div className="hidden md:block relative md:px-14 max-w-350 mx-auto">
+      <div className="hidden md:block relative md:px-14 mx-auto">
         {/* Fade edges */}
         <div className="absolute left-0 top-0 h-full w-16 bg-linear-to-r from-white to-transparent pointer-events-none z-10" />
         <div className="absolute right-0 top-0 h-full w-16 bg-linear-to-l from-white to-transparent pointer-events-none z-10" />
@@ -91,7 +91,7 @@ export function SkincareFavorites() {
         >
           {products.map((product) => (
             <SwiperSlide key={product.id}>
-              <div className="mx-auto w-full max-w-90">
+              <div className="mx-auto w-full">
                 <div className="overflow-hidden bg-gray-100 w-full aspect-360/390 rounded-t-sm">
                   <img
                     src={product.image}

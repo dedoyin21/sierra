@@ -32,13 +32,13 @@ export function Testimonials() {
 
   return (
     <section className="w-full bg-white px-4 py-16 lg:py-28 2xl:py-36 xl:px-17">
-      <div className="mx-auto max-w-7xl 2xl:max-w-400">
+      <div className="mx-auto">
         {/* Header */}
         <div className="text-center mb-12 lg:mb-20 xl:pb-8 pb-8">
           <h2 className="text-3xl sm:text-4xl lg:text-4xl 2xl:text-6xl font-medium text-[#926A63] pb-4">
             Real Results from Real People
           </h2>
-          <p className="mx-auto xl:px-80 2xl:max-w-3xl text-[#292929] text-base lg:text-lg 2xl:text-xl">
+          <p className="mx-auto xl:px-80 text-[#292929] text-base lg:text-lg 2xl:text-[30px]">
             Read why our methods, processes and products are loved by many around the world
           </p>
         </div>
@@ -103,8 +103,8 @@ export function Testimonials() {
                     : ""
                 }`}
               >
-                <p className="font-medium text-[#292929] mb-3">{t.name}</p>
-                <p className="text-[#242424] text-sm xl:text-base 2xl:text-lg">
+                <p className="font-medium text-[#292929] 2xl:text-2xl pb-3 2xl:pb-3 2xl:pt-4">{t.name}</p>
+                <p className="text-[#242424] text-sm xl:text-base 2xl:text-2xl">
                   {t.quote}
                 </p>
               </div>

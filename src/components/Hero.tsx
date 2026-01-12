@@ -32,16 +32,16 @@ export function Hero() {
         className={`
           fixed top-0 left-0 right-0 z-50
           transition-all duration-300
-          backdrop-blur-md bg-white/5
-          ${scrolled ? 'backdrop-blur-xl shadow-md' : ''}
+          backdrop-blur-md bg-black/20
+          ${scrolled ? 'backdrop-blur-xl shadow-md bg-black/50' : ''}
         `}
       >
-        <div className="mx-auto max-w-7xl 2xl:max-w-360 flex items-center justify-between px-4 sm:px-6 lg:px-10 py-4">
+        <div className="mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-10 py-4 2xl:py-9">
           {/* Logo */}
           <img src="/logo.png" alt="Sierra Logo" className="h-8 sm:h-9 md:h-10" />
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex gap-6 lg:gap-8 text-white text-sm font-DMSans">
+          <div className="hidden md:flex gap-6 lg:gap-10 2xl:gap-14 lg:text-sm 2xl:text-2xl text-white text-sm font-DMSans">
             {['Your Skin', 'Our Mission', 'Favourites', 'Testimonials', 'FAQs'].map(
               (item) => (
                 <a
@@ -103,7 +103,6 @@ export function Hero() {
         <div
           className="
             mx-auto w-full
-            max-w-7xl 2xl:max-w-360
             px-6 lg:px-10
             grid md:grid-cols-2 items-center
           "
@@ -114,9 +113,9 @@ export function Hero() {
               className="
                 font-Manrope font-medium
                 text-[38px] sm:text-5xl md:text-6xl
-                xl:text-7xl 2xl:text-[90px]
+                xl:text-7xl 2xl:text-[100px]
                 md:leading-15 leading-9
-                pb-6
+                pb-6 2xl:leading-22
               "
             >
               Transform Your Skin.
@@ -125,9 +124,9 @@ export function Hero() {
 
             <p
               className="
-                max-w-md xl:max-w-lg
+              
                 text-[13px] sm:text-base md:text-lg
-                opacity-90 pb-8 text-balance
+                opacity-90 pb-8 text-balance 2xl:text-[30px] 2xl:text-pretty
               "
             >
               Personalized skin care powered by science. Nourish, protect & glow

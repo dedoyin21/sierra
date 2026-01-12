@@ -28,14 +28,16 @@ export function Features() {
       id="features"
       className="w-full bg-white px-4 py-16 md:py-32 font-Manrope"
     >
-      <div className="mx-auto max-w-7xl xl:max-w-360 2xl:max-w-360">
+      <div className="mx-auto">
         {/* Header */}
         <div className="mb-12 md:mb-20 text-center">
           <h2 className="font-medium xl:px-72 text-[#926A63] text-3xl sm:text-4xl md:text-4xl xl:text-5xl 2xl:text-6xl pb-4">
             Your Skin Is Unique, Your Routine Should Be Too
           </h2>
 
-          <p className="mx-auto xl:px-62 text-[#292929] text-base md:text-sm xl:text-lg 2xl:text-xl leading-relaxed pb-4">
+          <p className="mx-auto xl:px-62 text-[#292929] text-base md:text-sm xl:text-lg 
+              2xl:text-[30px] leading-relaxed pb-4
+              2xl:pb-6">
             We don't believe in one-size-fits-all skincare. Take our quick skin
             quiz to discover a routine tailored to your skin type, concerns, and
             goals, all backed by science.
@@ -91,7 +93,7 @@ export function Features() {
                   {card.title}
                 </h3>
 
-                <p className="opacity-90 text-sm md:text-sm xl:text-[14px] 2xl:text-lg leading-relaxed max-w-[90%]">
+                <p className="opacity-90 text-sm md:text-sm xl:text-[14px] 2xl:text-2xl leading-relaxed max-w-[90%]">
                   {card.description}
                 </p>
               </div>
@@ -101,7 +103,8 @@ export function Features() {
 
         {/* CTA (hidden on desktop) */}
         <div className="text-center pt-16 xl:pt-16 lg:pt-14">
-          <button className="bg-[#FFCEE9] hover:bg-[#f3cfe3] text-black font-medium px-8 py-3 rounded-full text-sm md:text-base transition">
+          <button className="bg-[#FFCEE9] hover:bg-[#f3cfe3] text-black font-medium 2xl:text-2xl
+            px-8 py-3 rounded-full text-sm md:text-base transition">
             Start Your Skin Quiz
           </button>
         </div>
