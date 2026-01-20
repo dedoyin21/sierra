@@ -38,11 +38,13 @@ export function Hero() {
       >
         <div className="mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-10 py-4 2xl:py-9">
           {/* Logo */}
-          <img src="/logo.png" alt="Sierra Logo" className="h-8 sm:h-9 md:h-10" />
+          <a href='/'>
+            <img src="/logo.png" alt="Sierra Logo" className="h-8 sm:h-9 md:h-10" />
+          </a>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex gap-6 lg:gap-10 2xl:gap-14 lg:text-sm 2xl:text-2xl text-white text-sm font-DMSans">
-            {['Your Skin', 'Our Mission', 'Favourites', 'Testimonials', 'FAQs'].map(
+            {['Your skin', 'Our Mission', 'Favourites', 'Testimonials', 'FAQs'].map(
               (item) => (
                 <a
                   key={item}

@@ -2,8 +2,8 @@ import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 export function Footer() {
   const links = [
-    { name: "How it works", href: "#features" },
-    { name: "Our Mission", href: "#mission" },
+    { name: "How it works", href: "#yourskin" },
+    { name: "Our Mission", href: "#ourmission" },
     { name: "Favourites", href: "#favourites" },
     { name: "Testimonials", href: "#testimonials" },
     { name: "FAQ", href: "#faqs" },

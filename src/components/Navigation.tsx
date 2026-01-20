@@ -40,14 +40,19 @@ export function Navigation() {
 
         {/* Center Navigation (Tablet & Up) */}
         <div className="hidden md:flex items-center gap-6 lg:gap-8 text-white text-sm font-DMSans">
-          {['Your Skin', 'Our Mission', 'Favourites', 'Testimonials', 'FAQs'].map(
-            (item) => (
+          {[
+            { name: 'Your Skin', href: '#yourskin' },
+            { name: 'Our Mission', href: '#ourmission' },
+            { name: 'Favourites', href: '#favourites' },
+            { name: 'Testimonials', href: '#testimonials' },
+            { name: 'FAQs', href: '#faqs' }
+          ].map((item) => (
               <a
-                key={item}
-                href={`#${item.toLowerCase().replace(' ', '')}`}
+                key={item.name}
+                href={item.href}
                 className="hover:opacity-80 transition"
               >
-                {item}
+                {item.name}
               </a>
             )
           )}
@@ -77,15 +82,20 @@ export function Navigation() {
         `}
       >
         <div className="mx-4 mb-4 rounded-lg bg-linear-to-b from-[#C084D0] to-[#B470C4] px-6 py-4 font-DMSans origin-top">
-          {['Your Skin', 'Our Mission', 'Favourites', 'Testimonials', 'FAQs'].map(
-            (item) => (
+          {[
+            { name: 'Your Skin', href: '#yourskin' },
+            { name: 'Our Mission', href: '#ourmission' },
+            { name: 'Favourites', href: '#favourites' },
+            { name: 'Testimonials', href: '#testimonials' },
+            { name: 'FAQs', href: '#faqs' }
+          ].map((item) => (
               <a
-                key={item}
-                href={`#${item.toLowerCase().replace(' ', '')}`}
+                key={item.name}
+                href={item.href}
                 onClick={() => setIsOpen(false)}
                 className="block text-white py-2 hover:opacity-80 transition"
               >
-                {item}
+                {item.name}
               </a>
             )
           )}

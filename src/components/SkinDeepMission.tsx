@@ -1,7 +1,7 @@
 export function SkinDeepMission() {
   return (
     <section
-      id="mission"
+      id="ourmission"
       className="w-full bg-white px-4 py-16 md:py-24 font-Manrope"
     >
       <div className="mx-auto">

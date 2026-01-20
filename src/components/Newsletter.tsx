@@ -47,7 +47,7 @@ export function Newsletter() {
               />
               <Button
                 variant="primary"
-                size="md"
+                size="sm"
                 onClick={handleSubscribe}
                 className="absolute right-2 top-1/2 -translate-y-1/2 px-4 sm:px-6 md:px-8"
               >

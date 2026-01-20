@@ -31,7 +31,7 @@ export function Testimonials() {
   ];
 
   return (
-    <section className="w-full bg-white px-4 py-16 lg:py-28 2xl:py-36 xl:px-17">
+    <section id="testimonials" className="w-full bg-white px-4 py-16 lg:py-28 2xl:py-36 xl:px-17">
       <div className="mx-auto">
         {/* Header */}
         <div className="text-center mb-12 lg:mb-20 xl:pb-8 pb-8">

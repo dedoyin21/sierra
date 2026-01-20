@@ -25,7 +25,7 @@ export function Features() {
 
   return (
     <section
-      id="features"
+      id="yourskin"
       className="w-full bg-white px-4 py-16 md:py-32 font-Manrope"
     >
       <div className="mx-auto">
