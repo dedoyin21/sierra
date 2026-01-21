@@ -59,9 +59,11 @@ export function Hero() {
 
           {/* CTA */}
           <div className="flex items-center gap-4">
-            <button className="hidden md:block border-2 border-white text-white px-6 lg:px-8 py-2 rounded-full text-sm font-DMSans hover:bg-[#B470C4] transition">
-              Get Started
-            </button>
+            <a href="https://wa.me/1234567890?text=Hi,%20I'm%20interested%20in%20learning%20more%20about%20Sierra%20Skincare" target="_blank" rel="noopener noreferrer">
+              <button className="hidden md:block border-2 border-white text-white px-6 lg:px-8 py-2 rounded-full text-sm font-DMSans hover:cursor-pointer transition">
+                Get Started
+              </button>
+            </a>
 
             {/* Mobile Menu Toggle */}
             <button
@@ -77,25 +79,27 @@ export function Hero() {
         <div
           className={`
             md:hidden overflow-hidden transition-all duration-300 ease-out
-            ${isOpen ? 'max-h-96 opacity-100 scale-100' : 'max-h-0 opacity-0 scale-95'}
+            ${isOpen ? 'max-h-145 opacity-100 scale-100' : 'max-h-0 opacity-0 scale-95'}
           `}
         >
-          <div className="mx-4 mb-4 rounded-xl bg-linear-to-b from-[#C084D0] to-[#B470C4] px-6 py-4 font-DMSans">
+          <div className="mx-4 mb-4 rounded-xl bg-linear-to-b from-[#FFD8EE] to-[#FFEAF5] px-6 py-4 font-DMSans text-center">
             {['Your Skin', 'Our Mission', 'Favourites', 'Testimonials', 'FAQs'].map(
               (item) => (
                 <a
                   key={item}
                   href={`#${item.toLowerCase().replace(' ', '')}`}
                   onClick={() => setIsOpen(false)}
-                  className="block py-2 text-white hover:opacity-80"
+                  className="block py-2 text-black hover:opacity-80"
                 >
                   {item}
                 </a>
               )
             )}
-            <button className="mt-4 w-full rounded-full bg-[#FFCEE9] py-2 font-medium text-black">
-              Get Started
-            </button>
+            <a href="https://wa.me/1234567890?text=Hi,%20I'm%20interested%20in%20learning%20more%20about%20Sierra%20Skincare" target="_blank" rel="noopener noreferrer" className="block">
+              <button className="mt-12 w-full rounded-full bg-[#FFCEE9] py-2 font-medium text-black">
+                Get Started
+              </button>
+            </a>
           </div>
         </div>
       </nav>
